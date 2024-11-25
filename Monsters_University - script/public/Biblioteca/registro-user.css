@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --primary-color: #ffbb00b5;
+    --secondary: #fff;
+    --black: #000000;
+    --white: #fff;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: "Figtree", sans-serif;
+    background-image: url(img/login4.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffffaa;
+    padding: 10px;
+    border-radius: 110px;
+    box-shadow: 0 0 10px rgba(0, 0, 1, 0.955);
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 170%;
+}
+
+.form-group {
+    margin-bottom: 13px;
+    width: 110%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 130%;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 3px solid #000000;
+    border-radius: 400px;
+    box-sizing: border-box;
+    margin-bottom: 10%;
+}
+
+.btn {
+    text-decoration: none;
+    margin-left: 15%;
+    font-size: 130%;
+    width: 80%;
+    padding: 15px 20px;
+    background-color: #ffbb00;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.2s ease;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #ada89c;
+    transform: scale(1.05);
+}
+
+.register {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register a {
+    color: #ff0400;
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: dotted;
+}
+
+.registrarse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+

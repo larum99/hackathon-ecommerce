@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --primary-color: #ffbb00b1; /* Color principal */
+    --secondary-color: #ffbb00b1; /* Color secundario */
+    --black: #000000; /* Color negro */
+    --white: #ffffff; /* Color blanco */
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1); /* Sombra de caja */
+}
+
+/* Reset básico */
+* {
+    font-family: "Figtree", sans-serif; /* Fuente */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear; /* Transiciones suaves */
+}
+
+/* Estilo del body */
+body {
+    background-color: #f4f4f4; /* Color de fondo */
+    color: #333; /* Color de texto */
+}
+
+
+body::-webkit-scrollbar {
+    width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #000000;
+}
+
+/* Estilo del encabezado */
+header{
+    background-color: #ffbb00;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.logo{
+    font-size: 250%;
+    text-decoration: none;
+    color: #2c2c2c;
+    font-weight: 700;
+}
+
+span{
+    color: #ffffff;
+}
+
+.navmenu{
+    display: flex;
+}
+
+.navmenu a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navmenu li{
+    list-style: none;
+    text-decoration: none;
+    font-size: 22px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.navmenu a:hover{
+    transform: scale(1.1);
+    color: #000000;
+    transition: .5s;
+}
+
+.nav-icon{
+    display: flex;
+    align-items: center;
+    font-size: 350%;
+}
+
+.nav-icon i{
+    margin-right: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.nav-icon i:hover{
+    transform: scale(1.1);
+    color: #000000;
+}
+
+section{
+    padding: 5% 10%;
+}
+
+/* Estilos del contenedor principal */
+main {
+    padding: 100px 20px 20px; /* Espaciado superior para evitar el encabezado fijo */
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 4.5%;
+    margin-bottom: 10%;
+}
+
+main h1{
+    text-align: center;
+    margin-bottom: 2.5%;
+}
+
+#libros-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px; /* Espaciado inferior */
+}
+
+.box {
+    background: #ffffff; /* Color de fondo de las cajas de libros */
+    border: 1px solid #ccc; /* Borde de las cajas */
+    border-radius: 5px; /* Esquinas redondeadas */
+    padding: 15px; /* Espaciado interno */
+    flex: 1 1 calc(25% - 20px); /* Ancho de cada libro */
+    transition: transform 0.3s; /* Transición suave */
+}
+
+.box:hover {
+    transform: scale(1.05); /* Aumentar tamaño al pasar el ratón */
+}
+
+/* Estilo del carrito de compras */
+.carrito-container {
+    background: #e9ecef; /* Color de fondo del carrito */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 5px; /* Esquinas redondeadas */
+    box-shadow: var(--box-shadow); /* Sombra de la caja */
+}
+
+#carrito-list {
+    list-style-type: none; /* Sin estilo de lista */
+}
+
+#carrito-list li {
+    margin: 10px 0; /* Espaciado entre elementos */
+}
+
+/* Estilo de botones */
+button {
+    background: var(--primary-color); /* Color de fondo del botón */
+    color: var(--white); /* Color del texto del botón */
+    border: none;
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Esquinas redondeadas */
+    cursor: pointer; /* Cursor en forma de mano */
+    transition: background 0.3s; /* Transición suave */
+}
+
+button:hover {
+    background: #2c3e50; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilo del pie de página */
+.end-text {
+    text-align: center; /* Alinear texto al centro */
+    padding: 20px 0; /* Espaciado interno */
+    background: #35424a; /* Color de fondo del pie */
+    color: #ffffff; /* Color del texto */
+}
+
+.contact{
+    background-color: #e0e0e0;
+}
+
+.contact-info2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    gap: rem;
+}
+
+.logo2{
+    font-size: 250%;
+    text-decoration: none;
+    color: #2c2c2c;
+    font-weight: 700;
+}
+
+.contact-info2 h4{
+    color: #212529;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.contact-info2 p{
+    color: #565656;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .42s;
+}
+
+.contact-info2 p:hover{
+    color: var(--primary-color);
+}
+
+.social-icon i{
+    color: var(--primary-color);
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all .42s;
+}
+
+.social-icon i:hover{
+    transform: scale(1.3);
+}
+
+.end-text{
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 20px;
+}
+
+.end-text p{
+    color: #111;
+    text-transform: capitalize;
+}
+
+
+/* Estilos de responsividad */
+@media (max-width: 768px) {
+    #libros-container {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: center; /* Alinear al centro */
+    }
+
+    .box {
+        flex: 1 1 100%; /* Cada libro ocupa toda la fila */
+    }
+
+    .nav-icon {
+        font-size: 2em; /* Ajustar tamaño de iconos en pantallas pequeñas */
+    }
+}
+
+section{
+    padding: 5% 10%;
+}
+
